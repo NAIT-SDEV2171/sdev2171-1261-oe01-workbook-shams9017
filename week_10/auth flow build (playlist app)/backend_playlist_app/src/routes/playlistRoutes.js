@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const auth = require('../middleware/auth');
+const playlists = require('../controllers/playlistController');
+router.use(auth);
+router.get('/', playlists.list);
+router.get('/:id', playlists.get);
+router.post('/', playlists.create);
+router.put('/:id', playlists.update);
+router.delete('/:id', playlists.remove);
+module.exports = router;

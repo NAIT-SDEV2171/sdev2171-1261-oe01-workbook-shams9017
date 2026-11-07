@@ -1,0 +1,16 @@
+const express = require('express');
+const cors = require('cors');
+const authRoutes = require('./routes/authRoutes');
+const songRoutes = require('./routes/songRoutes');
+const notFound = require('./middleware/notFound');
+const errorHandler = require('./middleware/errorHandler');
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.get('/', (_req, res) => res.json({ message: 'Playlist auth backend is running', status: 'ok' }));
+app.use('/auth', authRoutes);
+app.use('/songs', songRoutes);
+app.use('/playlists', require('./routes/playlistRoutes'));
+app.use(notFound);
+app.use(errorHandler);
+module.exports = app;
