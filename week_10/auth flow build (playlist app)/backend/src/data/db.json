@@ -34,6 +34,20 @@
       "email": "test99@test.com",
       "passwordHash": "$2a$10$bN51cSHN1yhr/vuuG1D8TOk0QgWQGsiTI6oMcr9pjeFSIJ6KbshE2",
       "createdAt": "2026-11-07T00:42:57.480Z"
+    },
+    {
+      "id": "user_1794353434286_6q8vewkp",
+      "name": "shams3",
+      "email": "test3@test.com",
+      "passwordHash": "$2a$10$QtHEqaI981mIGYaauSWWLeErTKdqwQ7ItImC.aVFd7kZjPmHF5xvO",
+      "createdAt": "2026-11-10T23:30:34.286Z"
+    },
+    {
+      "id": "user_1794960258710_6zl0u8su",
+      "name": "shams_session",
+      "email": "session@test.com",
+      "passwordHash": "$2a$10$jE.NhR70PwT3WcVYqhAkneVDkWeEtXVgo8GohTl0qjULQhK6/fgkW",
+      "createdAt": "2026-11-18T00:04:18.710Z"
     }
   ],
   "songs": [
@@ -168,6 +182,19 @@
       ],
       "createdAt": "2026-11-07T00:44:16.119Z",
       "updatedAt": "2026-11-07T00:45:44.864Z"
+    },
+    {
+      "id": "276f7985-f615-47f4-9527-ec9c34fae390",
+      "userId": "user_1794353434286_6q8vewkp",
+      "title": "Playlist 1",
+      "goal": "",
+      "songIds": [
+        "1",
+        "3",
+        "5"
+      ],
+      "createdAt": "2026-11-10T23:31:22.500Z",
+      "updatedAt": "2026-11-10T23:31:22.500Z"
     }
   ]
 }
